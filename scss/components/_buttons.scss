@@ -1,0 +1,12 @@
+@use "../utilities/variables" as *;
+.btn-purple {
+  background-color: $color-btn-purple-bg;
+  color: $color-brand;
+  border: 1px solid $color-btn-purple-border;
+
+  &:hover {
+    background-color: $color-btn-purple-hover;
+    border-color: $color-btn-purple-border-hover;
+    color: $color-brand;
+  }
+}

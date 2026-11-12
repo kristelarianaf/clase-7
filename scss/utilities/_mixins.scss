@@ -1,0 +1,13 @@
+@use "../utilities/variables" as *;
+@mixin flex-custom($direction: row, $justify: flex-start, $gap: 0) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  gap: $gap;
+}
+@mixin card-box {
+  border: solid 1px $color-text-body;
+  border-radius: 15px;
+  padding: 30px;
+  margin: 30px;
+}

@@ -1,0 +1,43 @@
+// scss/components/_cards.scss
+@use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
+
+.indexcard {
+  @include flex-custom(row, flex-start);
+
+  article {
+    @include card-box;
+  }
+}
+
+.cardindex {
+  @include flex-custom(column, space-around, 20px);
+
+  article {
+    @include card-box;
+  }
+
+  @media only screen and (min-width: 1024px) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
+
+.servicios-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 1rem;
+  @include card-box;
+
+  @media (min-width: 768px) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (min-width: 1024px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

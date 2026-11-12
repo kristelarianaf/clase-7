@@ -1,0 +1,25 @@
+@use "../utilities/variables" as *;
+
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+h1 {
+  font-family: $font-principal;
+  font-size: 32px;
+  color: $color-text-dark;
+}
+
+h2 {
+  font-family: $font-principal;
+  font-size: 24px;
+  color: $color-indigo;
+}
+
+p {
+  font-family: $font-principal;
+  font-size: 15px;
+  color: $color-text-body;
+}
+
+a {
+  text-decoration: none;
+}
